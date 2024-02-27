@@ -5,7 +5,7 @@
 console.log("Script running.")
 
 const POKE_CONTAINER
-const PAGE_SIZE = 150;
+const PAGE_SIZE = 36;
 
 const colors = {
     fire: '#FDDFDF',
@@ -33,5 +33,9 @@ const fetchPokemonPage = async (page=0) => {
 
 const fetchThatPokemon = async (id) => {
     // GET https://pokeapi.co/api/v2/pokemon/{id or name}/
-    
+    const url = `https://pokeapi.co/api/v2/pokemon/${id}`;
+    const response = await fetch(url);
+    const pokemon = await response.json();
+    console.debug(`$({id}) caught a pokemon! it's a ${pokemon.name}!`)
+    return pokemon
 }
