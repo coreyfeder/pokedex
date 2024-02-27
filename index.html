@@ -1,21 +1,36 @@
 <!DOCTYPE html>
+<!-- 
+    Practice mini-Pokedex
+    Using PokéAPI: https://pokeapi.co/
+        GET https://pokeapi.co/api/v2/pokemon/{id or name}/
+    Using Fetch
+ -->
 <html lang="en">
     <head>
-        <title>Document</title>
+        <title>Pokédexlette</title>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <link rel="stylesheet" href="src/style.css" />
-
-        <!-- Google Fonts (yeah) -->
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-        <link
-            href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
-            rel="stylesheet"
-        />
     </head>
 
     <body>
+
+        <div class="poke-container" id="poke-container">
+            <!-- Why in the name of Mew are we using matching ID and ClassNames? -->
+        </div>
+    
+        <!-- sample -->
+        <div class="pokemon" style="background-color: rgb(222, 253, 224);">
+            <div class="image-container">
+                <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/1.png" alt="">
+            </div>
+            <div class="info">
+                <span class="number">#001</span>
+                <h3 class="name">Balbasaur</h3>
+                <small class="type">Type <span>grass</span></small>
+            </div>
+        </div> 
+
         <!-- begin context (branding, controls, muckedy-muck) -->
         <!-- begin content -->
 
