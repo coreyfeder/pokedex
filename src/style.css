@@ -1,8 +1,24 @@
 @import url('https://fonts.googleapis.com/css?family=Lato:300,400&display=swap');
 
-
 * {
     box-sizing: border-box;
+}
+
+:root {
+    --color-fire: #FDDFDF;
+    --color-grass: #DEFDE0;
+    --color-electric: #FCF7DE;
+    --color-water: #DEF3FD;
+    --color-ground: #F4E7DA;
+    --color-rock: #D5D5D4;
+    --color-fairy: #FCEAFF;
+    --color-poison: #98D7A5;
+    --color-bug: #F8D5A3;
+    --color-dragon: #97B3E6;
+    --color-psychic: #EAEDA1;
+    --color-flying: #F5F5F5;
+    --color-fighting: #E6E0D4;
+    --color-normal: #F5F5F5;
 }
 
 body {
